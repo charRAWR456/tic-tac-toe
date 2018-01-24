@@ -1,11 +1,11 @@
-.col-md-4{
+.col-xs-4{
   border: 2px solid lightblue;
   height: 200px;
   width: 200px;
   background-color: green;
 }
 
-.col-md-4 p {
+.col-xs-4 p {
     font-size: 177px;
     text-align: center;
     margin-top: -26px;
@@ -15,8 +15,10 @@
 }
 
 #currentPlayer {
+
   font-family: "Wingdings";
   font-weight: bolder;
+  font-size: 30px;
 }
 
 .btn {
@@ -26,4 +28,10 @@
 #winner{
   font-size: 50pt;
   font-family: "Comic Sans MS"
+
+}
+
+.well {
+  width: 50%;
+  background-color: darkseagreen;
 }

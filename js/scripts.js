@@ -11,7 +11,7 @@ function changePlayer() {
 }
 
 function resetGame() {
-  $(".col-md-4").children().text("");
+  $(".col-xs-4").children().text("");
   player = "X";
   $("#currentPlayer").text(player);
   $("#winner").text("");
@@ -66,7 +66,7 @@ $(document).ready(function(){
     changePlayer();
   })
 
-  $(".col-md-4").click(function(){
+  $(".col-xs-4").click(function(){
 
     if(player == "X" && $(this).children()[0].innerText == "O"){
       alert("try again");
@@ -85,10 +85,6 @@ $(document).ready(function(){
       winCheck();
       changePlayer();
     }
-
-
-
-
 
   })
 
