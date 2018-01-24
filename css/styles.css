@@ -1,24 +1,36 @@
+body {
+  background-color: darksalmon;
+}
+
 .col-xs-4{
   border: 2px solid lightblue;
   height: 200px;
   width: 200px;
-  background-color: green;
+  background-color: teal;
+  padding: 5px;
 }
 
 .col-xs-4 p {
     font-size: 177px;
     text-align: center;
     margin-top: -26px;
-    color: limegreen;
-    text-shadow: yellow 3px 3px;
+    color: salmon;
+    text-shadow: lightyellow 3px 3px;
     font-family: "Wingdings";
 }
 
 #currentPlayer {
-
   font-family: "Wingdings";
-  font-weight: bolder;
   font-size: 30px;
+  color: lime;
+}
+
+h1{
+  text-align: center;
+  width: 50%;
+  font-family: monospace;
+  font-size: 30pt;
+  font-weight: bold;
 }
 
 .btn {
@@ -27,11 +39,12 @@
 
 #winner{
   font-size: 50pt;
-  font-family: "Comic Sans MS"
-
+  font-family: monospace;
+  color: lightyellow;
 }
 
 .well {
   width: 50%;
-  background-color: darkseagreen;
+  background-color: lightseagreen;
+  font-family: monospace;
 }
