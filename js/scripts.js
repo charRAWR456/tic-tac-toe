@@ -13,7 +13,7 @@ function resetGame() {
   $(".col-xs-4").children().text("");
   player = "J";
   $("#currentPlayer").text(player);
-  $("#winner").text("");
+  $("#winner").hide();
 }
 
 function winCheck() {
@@ -34,7 +34,7 @@ function winCheck() {
   ||
   $("#top-right").children()[0].innerText == player && $("#mid-center").children()[0].innerText == player && $("#bot-left").children()[0].innerText == player
   ) {
-    $("#winner").text("YOU WIN!!!!!!!");
+    $("#winner").show().text("YOU WIN!!!!");
   }
 }
 
@@ -51,11 +51,19 @@ $(document).ready(function(){
 
   $(".col-xs-4").click(function(){
 
-    if ((player == "J" && $(this).children()[0].innerText == "M") || (player == "M" && $(this).children()[0].innerText == "J")){
-      alert("try again");
+    if ($("#winner").is(":visible")) {
+      alert("This game has been won, please reset game to play again!");
     }
 
-    else if ((player == "J" && $(this).children()[0].innerText == "J") || (player == "M" && $(this).children()[0].innerText == "M")){
+    else if ((player == "J" && $(this).children()[0].innerText == "M")
+    ||
+    (player == "M" && $(this).children()[0].innerText == "J")
+    ||
+    (player == "J" && $(this).children()[0].innerText == "J")
+    ||
+    (player == "M" && $(this).children()[0].innerText == "M"))
+    {
+
     }
 
     else {

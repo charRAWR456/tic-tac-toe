@@ -9,7 +9,6 @@
 _This application recreates the classic game Tic Tac Toe in JavaScript. The game can currently be played only with local human opponents (no AI available)._
 
 **Known Issues:**
-* Game can still continue after a winner is declared.
 * Game does not deliver a "game over" state when no valid moves remain.
 
 ## Rules of Gameplay
